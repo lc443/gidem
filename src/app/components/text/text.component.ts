@@ -26,8 +26,8 @@ export class TextComponent implements OnInit {
     this.firstText = this.firstTextList[0].text;
     this.openerList = FLIRTY_CONVO_OPENERS_TEXT
     this.openerText = this.openerList[0].text
+    this.cdr.detectChanges();
   
-    console.log(this.firstText)
   }
 
   randomFirstText(): void {
@@ -60,6 +60,7 @@ export class TextComponent implements OnInit {
       const randomIndex = Math.floor(Math.random() * this.openerList.length);
       this.openerText = this.openerList[randomIndex + 1];
       this.openerText = this.openerText.text;
+      this.cdr.detectChanges();
     
 
     }

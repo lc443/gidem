@@ -1,53 +1,62 @@
-<h1>First texts</h1>
-<p> You are sending a text in order to elicit some sort of response</p>
-<p>After you get her number here are a list of first texts what you can send her. Remember to keep it light and witty.
-    The purpose is to offer a date on the fourth text conversation.
-</p>
-
-<div class="row">
-    <div class=" col-sm-6 mb-2 mt-3 ">
-        <h1>First Text Generation</h1>
-        <div class="overlay__btns">
-            <div class="text-end ">
-                <p class="overlay__description" *ngIf="firstClicked">
-                    <i class="mx-2">{{firstText}}</i>
-                    <button class="btn btn-outline-light btn-sm " (click)="copyText([firstText])">copy</button>
-                </p>
-                <button class="btn btn-outline-light btn-sm text-end" (click)="randomFirstText()">Generate <i
-                        class="fas fa-cog fa-spin"></i></button>
-            </div>
+<section>
+    <div class="section-part">
+        <div>
+            <h1>First texts</h1>
+            <p> You are sending a text in order to elicit some sort of response</p>
+            <p>After you get her number here are a list of first texts what you can send her. Remember to keep it light
+                and
+                witty. The purpose is to offer a date on the fourth text conversation.
+            </p>
         </div>
-    </div>
-</div>
 
-
-
-<br />
-<br />
-
-<h1>Flirt Texts</h1>
-<p>When yiu are in a convo with a girl think of it as in. How can I frame this as a 'Me, You' conversation?. So just
-    using the word "Me & You" in the conversation will frame it as flirtatious</p>
-
-
-    <br />
-    <br />
-
-    <h1>Daily Convos</h1>
-    <h3>Opener</h3>
-    <div class="row">
-        <div class=" col-sm-6 mb-2 mt-3 ">
-            <h1>First Text Generation</h1>
-            <div class="overlay__btns">
-                <div class="text-end ">
-                    <p class="overlay__description" *ngIf="openerClidked">
-                        <i class="mx-2">{{openerText}}</i>
-                        <button class="btn btn-outline-light btn-sm " (click)="copyText([openerText])">copy</button>
-                    </p>
-                    <button class="btn btn-outline-light btn-sm text-end" (click)="generateOpeners()">Generate <i
-                            class="fas fa-cog fa-spin"></i></button>
+        <div class="row">
+            <div class=" col-sm-6 mb-2 mt-3 ">
+                <h1>First Texts</h1>
+                <div class="overlay__btns text-end">
+                    <div>
+                        <p class="overlay__description" *ngIf="firstClicked">
+                            <i class="mx-2">{{firstText}}</i>
+                            <button class="btn btn-outline-light btn-sm " (click)="copyText([firstText])">copy</button>
+                        </p>
+                        <button class="btn btn-outline-light btn-sm mt-3" (click)="randomFirstText()">Generate <i
+                                class="fas fa-cog fa-spin"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<section>
+
+    <div class="section-part">
+        <div>
+            <h1>Daily Convos</h1>
+            <p>When you are in a convo with a girl think of it as in. How can I frame this as a 'Me, You' conversation?. So just
+                using the word "Me & You" in the conversation will frame it as flirtatious
+            </p>
+        </div>
+
     
+        <div class="row ">
+            <div class="col-sm-6 mb-2 mt-3 ">
+                <h1>Openers</h1>
+                <div class=" overlay__btns">
+                    <div class="text-end">
+                        <p class="overlay__description mb-3" *ngIf="openerClidked">
+                            <i class="mx-3">{{openerText}}</i>
+                            <button class="btn btn-outline-light btn-sm mt-2 mb-2"
+                                (click)="copyText([openerText])">copy</button>
+                        </p>
+                        <button class="btn btn-outline-light btn-sm text-end mt-5" (click)="generateOpeners()">Generate <i
+                                class="fas fa-cog fa-spin"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+
+
+</section>
