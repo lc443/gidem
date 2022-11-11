@@ -1,0 +1,17 @@
+nav {
+    margin: 2rem  2.5rem 10rem;
+    padding: 0 auto;
+    width: auto;
+}
+
+ 
+@media screen and (max-width: 390px) {
+  
+    .outer-container {
+      margin-top: 5rem;
+      
+    }
+    .overlay {
+      padding: 2rem;
+    }
+  }
