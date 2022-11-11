@@ -42,7 +42,7 @@
                 <div class="text-end ">
                     <p class="overlay__description" *ngIf="openerClidked">
                         <i class="mx-2">{{openerText}}</i>
-                        <button class="btn btn-outline-light btn-sm " (click)="copyText([firstText])">copy</button>
+                        <button class="btn btn-outline-light btn-sm " (click)="copyText([openerText])">copy</button>
                     </p>
                     <button class="btn btn-outline-light btn-sm text-end" (click)="generateOpeners()">Generate <i
                             class="fas fa-cog fa-spin"></i></button>
