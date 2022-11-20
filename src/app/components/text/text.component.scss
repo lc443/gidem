@@ -1,4 +1,8 @@
- 
+section {
+  text-align: left;
+}
+
+
  .section-part {
   margin-top: 8rem;
  }
@@ -49,24 +53,6 @@
  }
 
 
-
-
-
-
-
- .overlay {
-   width: 100%;
-   max-width: 840px;
-   max-height: 300px;
-   padding: 8rem 6rem;
-   display: flex;
-   align-items: center;
-   background: rgba(153, 153, 153, 0.069);
-   box-shadow: 0 0.75rem 2rem 0 rgba(85, 85, 85, 0.1);
-   border-radius: 2rem;
-   border: 1px solid rgba(255, 255, 255, 0.125);
- }
-
  .overlay__inner {
    max-width: 36rem;
 
@@ -84,7 +70,6 @@
    font-size: 1rem;
    line-height: 1.75rem;
    margin-bottom: 2rem;
-   width: 20rem;
    height: 4.5rem;
  }
 
@@ -93,7 +78,6 @@
  }
 
  .overlay__btns {
-
    display: flex;
  }
 
@@ -122,13 +106,11 @@
  }
 
 
-
-
  @media screen and (min-width: 320px) {
 
   
-  section{
-   margin: 2rem;
+  section {
+    text-align: center;
   }
 
 
