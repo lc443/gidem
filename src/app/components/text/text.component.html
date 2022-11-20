@@ -1,4 +1,16 @@
-<section>
+<section class="justify-content-center align-middle">
+
+    <!-- <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div> -->
+
+      
     <div class="section-part">
         <div>
             <h1>First texts</h1>
@@ -9,25 +21,44 @@
             </p>
         </div>
 
-        <div class="row">
-            <div class=" col-sm-6 mb-2 mt-3 ">
+        <div class="row text-center">
+            <h1> Text Generator</h1>
+            <div class=" row col-sm-6 mb-2 mt-3 ">
                 <h1>First Texts</h1>
                 <div class="overlay__btns text-end">
                     <div>
                         <p class="overlay__description" *ngIf="firstClicked">
                             <i class="mx-2">{{firstText}}</i>
-                            <button class="btn btn-outline-light btn-sm " (click)="copyText([firstText])">copy</button>
+                            <button class="btn btn-outline-light btn-sm mb-2" (click)="copyText([firstText])">copy</button>
                         </p>
-                        <button class="btn btn-outline-light btn-sm mt-3" (click)="randomFirstText()">Generate <i
+                        <button class="btn btn-outline-primary text-white btn-sm mt-5 mb-5" (click)="randomFirstText()">Generate <i
                                 class="fas fa-cog fa-spin"></i></button>
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class=" col-sm-6 mb-2 mt-3 ">
+                    <h1>First Texts</h1>
+                    <div class="overlay__btns text-end">
+                        <div>
+                            <p class="overlay__description" *ngIf="firstClicked">
+                                <i class="mx-2">{{firstText}}</i>
+                                <button class="btn btn-outline-light btn-sm mb-2" (click)="copyText([firstText])">copy</button>
+                            </p>
+                            <button class="btn btn-outline-primary text-white  btn-sm mt-5 mb-5" (click)="randomFirstText()">Generate <i
+                                    class="fas fa-cog fa-spin"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        
     </div>
 </section>
-<section>
 
+
+<section>
     <div class="section-part">
         <div>
             <h1>Daily Convos</h1>
@@ -42,12 +73,12 @@
                 <h1>Openers</h1>
                 <div class=" overlay__btns">
                     <div class="text-end">
-                        <p class="overlay__description mb-3" *ngIf="openerClidked">
+                        <p class="overlay__description text-end" *ngIf="openerClidked">
                             <i class="mx-3">{{openerText}}</i>
-                            <button class="btn btn-outline-light btn-sm mt-2 mb-2"
+                            <button class="btn btn-outline-light btn-sm  mb-2"
                                 (click)="copyText([openerText])">copy</button>
                         </p>
-                        <button class="btn btn-outline-light btn-sm text-end mt-5" (click)="generateOpeners()">Generate <i
+                        <button class="btn btn-outline-primary text-white  btn-sm text-end mt-5" (click)="generateOpeners()">Generate <i
                                 class="fas fa-cog fa-spin"></i></button>
                     </div>
                 </div>
