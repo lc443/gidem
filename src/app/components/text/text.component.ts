@@ -24,6 +24,7 @@ export class TextComponent implements OnInit {
    
     this.firstTextList = FIRST_TEXT;
     this.firstText = this.firstTextList[0].text;
+    this.cdr.detectChanges();
     this.openerList = FLIRTY_CONVO_OPENERS_TEXT
     this.openerText = this.openerList[0].text
     this.cdr.detectChanges();
@@ -31,13 +32,13 @@ export class TextComponent implements OnInit {
   }
 
   randomFirstText(): void {
-    this.cdr.detectChanges();
     this.firstClicked = true;
- 
+    this.cdr.detectChanges();
     const randomIndex = Math.floor(Math.random() * this.firstTextList.length);
     this.firstText = this.firstTextList[randomIndex + 1];
     this.firstText = this.firstText.text;
 
+    this.cdr.detectChanges();
   }
 
 
@@ -58,8 +59,8 @@ export class TextComponent implements OnInit {
     generateOpeners(): void {
       this.openerClidked = true;
       this.cdr.detectChanges();
-      const randomIndex = Math.floor(Math.random() * this.openerList.length);
-      this.openerText = this.openerList[randomIndex + 1];
+      const randomIndexT = Math.floor(Math.random() * this.openerList.length);
+      this.openerText = this.openerList[randomIndexT + 1];
       this.openerText = this.openerText.text;
       this.cdr.detectChanges();
     

@@ -23,11 +23,11 @@
                     <div>
                         <p class="overlay__description" *ngIf="firstClicked">
                             <i class="mx-2">{{firstText}}</i>
-                            <button class="btn btn-outline-light btn-sm mb-2" (click)="copyText([firstText])" *ngIf="firstText != '' " >copy</button>
+                            <button   class="btn btn-outline-light btn-sm mb-2" (click)="copyText([firstText])" >copy</button>
                         </p>
                     </div>
                 </div>
-                <button class="btn btn-outline-primary text-white btn-sm mt-5 mb-5" (click)="randomFirstText()">Generate <i
+                <button class="btn btn-outline-primary text-white btn-sm mt-3 mb-5" (click)="randomFirstText()">Generate <i
                         class="fas fa-cog fa-spin"></i></button>
             </div>
 
@@ -40,10 +40,10 @@
                             <button class="btn btn-outline-light btn-sm  mb-2"
                                 (click)="copyText([openerText])">copy</button>
                         </p>
-                        <button class="btn btn-outline-primary text-white  btn-sm text-end mt-5" (click)="generateOpeners()">Generate <i
-                                class="fas fa-cog fa-spin"></i></button>
                     </div>
                 </div>
+                <button class="btn btn-outline-primary text-white  btn-sm text-end mt-3" (click)="generateOpeners()">Generate <i
+                        class="fas fa-cog fa-spin"></i></button>
             </div>
     
         </div>
