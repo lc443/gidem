@@ -37,6 +37,7 @@ export class TextComponent implements OnInit {
     const randomIndex = Math.floor(Math.random() * this.firstTextList.length);
     this.firstText = this.firstTextList[randomIndex + 1];
     this.firstText = this.firstText.text;
+
   }
 
 

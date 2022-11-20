@@ -1,46 +1,51 @@
 
-<section>      
+<section class="mt-5 mb-5">      
     <div>
         <div>
             <h1>First texts</h1>
-            <p> You are sending a text in order to elicit some sort of response</p>
-            <p>After you get her number here are a list of first texts what you can send her. Remember to keep it light
-                and
-                witty. The purpose is to offer a date on the fourth text conversation.
-            </p>
+           
         </div>
 
-        <h2> Text Generator</h2>
-        <div class="row ">
-            <div class="row col-sm-6 mb-2 mt-3 ">
-                <h1>First Texts</h1>
-                <div class="overlay__btns text-end">
-                    
+        <h2 class="mb-5"> Text Generator</h2>
+        <div class="row container">
+            <div class="col-sm-5 mt-3 ">
+                <h1 class="mb-3">First Texts</h1>
+                <div >
+                 
+                    <p class="justify-contents-left">
+                        You are sending a text in order to elicit some sort of response
+                        After you get her number here are a list of first texts what you can send her. Remember to keep it light
+                        and
+                        witty. The purpose is to offer a date on the fourth text conversation.
+                    </p>
+                </div>
+                <div class="overlay__btns "> 
                     <div>
                         <p class="overlay__description" *ngIf="firstClicked">
                             <i class="mx-2">{{firstText}}</i>
-                            <button class="btn btn-outline-light btn-sm mb-2" (click)="copyText([firstText])">copy</button>
+                            <button class="btn btn-outline-light btn-sm mb-2" (click)="copyText([firstText])" *ngIf="firstText != '' " >copy</button>
                         </p>
-                        <button class="btn btn-outline-primary text-white btn-sm mt-5 mb-5" (click)="randomFirstText()">Generate <i
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary text-white btn-sm mt-5 mb-5" (click)="randomFirstText()">Generate <i
+                        class="fas fa-cog fa-spin"></i></button>
+            </div>
+
+            <div class="col-sm-6 mb-2 mt-3">
+                <h1>Openers</h1>
+                <div class="overlay__btns">
+                    <div class="text-end">
+                        <p class="overlay__description text-end" *ngIf="openerClidked">
+                            <i class="mx-3">{{openerText}}</i>
+                            <button class="btn btn-outline-light btn-sm  mb-2"
+                                (click)="copyText([openerText])">copy</button>
+                        </p>
+                        <button class="btn btn-outline-primary text-white  btn-sm text-end mt-5" (click)="generateOpeners()">Generate <i
                                 class="fas fa-cog fa-spin"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class=" col-sm-6 mb-2 mt-3 ">
-                    <h1>First Texts</h1>
-                    <div class="overlay__btns text-end">
-                        <div>
-                            <p class="overlay__description" *ngIf="firstClicked">
-                                <i class="mx-2">{{firstText}}</i>
-                                <button class="btn btn-outline-light btn-sm mb-2" (click)="copyText([firstText])">copy</button>
-                            </p>
-                            <button class="btn btn-outline-primary text-white  btn-sm mt-5 mb-5" (click)="randomFirstText()">Generate <i
-                                    class="fas fa-cog fa-spin"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
         </div>
 
         
@@ -59,20 +64,7 @@
 
     
         <div class="row ">
-            <div class="col-sm-6 mb-2 mt-3 ">
-                <h1>Openers</h1>
-                <div class=" overlay__btns">
-                    <div class="text-end">
-                        <p class="overlay__description text-end" *ngIf="openerClidked">
-                            <i class="mx-3">{{openerText}}</i>
-                            <button class="btn btn-outline-light btn-sm  mb-2"
-                                (click)="copyText([openerText])">copy</button>
-                        </p>
-                        <button class="btn btn-outline-primary text-white  btn-sm text-end mt-5" (click)="generateOpeners()">Generate <i
-                                class="fas fa-cog fa-spin"></i></button>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
     </div>
