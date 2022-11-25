@@ -1,14 +1,19 @@
+section {
+  text-align: left;
+}
+
+
+ .section-part {
+  margin-top: 8rem;
+ }
+
  h1 {
    font-weight: bold;
    color: rgb(218, 218, 218);
  }
 
  .row {
-   max-width: auto;
-   margin: auto;
-   padding: auto;
-   display: flex;
-
+  text-align: center
  }
 
  .row h1 {
@@ -44,24 +49,6 @@
  }
 
 
-
-
-
-
-
- .overlay {
-   width: 100%;
-   max-width: 840px;
-   max-height: 300px;
-   padding: 8rem 6rem;
-   display: flex;
-   align-items: center;
-   background: rgba(153, 153, 153, 0.069);
-   box-shadow: 0 0.75rem 2rem 0 rgba(85, 85, 85, 0.1);
-   border-radius: 2rem;
-   border: 1px solid rgba(255, 255, 255, 0.125);
- }
-
  .overlay__inner {
    max-width: 36rem;
 
@@ -69,7 +56,6 @@
 
  .overlay__title {
    font-size: 1.875rem;
-   line-height: 2.75rem;
    font-weight: 700;
    letter-spacing: -0.025em;
    margin-bottom: 0.5rem;
@@ -77,9 +63,7 @@
 
  .overlay__description {
    font-size: 1rem;
-   line-height: 1.75rem;
    margin-bottom: 2rem;
-   width: 20rem;
    height: 4.5rem;
  }
 
@@ -88,7 +72,6 @@
  }
 
  .overlay__btns {
-
    display: flex;
  }
 
@@ -117,13 +100,9 @@
  }
 
 
-
-
- @media screen and (min-width: 320px) {
-
-  
-  section{
-   margin: 4rem;
+ @media screen and (min-width: 576px) {
+  section {
+   text-align: center;
   }
 
 

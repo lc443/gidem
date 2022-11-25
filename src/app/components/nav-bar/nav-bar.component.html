@@ -1,16 +1,13 @@
 
 
-   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/home">Gidem</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" routerLink="/home">Home </a>
-          </li>
+      <a class="navbar-brand" routerLink="/home">Gidem</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
           <li class="nav-item">
             <a class="nav-link" routerLink="/system">System</a>
           </li>
@@ -24,6 +21,10 @@
             <a class="nav-link" routerLink="/text">Text Mode</a>
           </li>
         </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>

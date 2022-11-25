@@ -4,7 +4,7 @@ export const FIRST_TEXT = [
     { "text": "Introducing the only guy who won’t bore you to death over text 👆"},
     { "text": "Do you believe in love at first text? -> Now you do."},
     { "text": "Do you believe in love at first text? Or should I just text you again?"},
-    { "text": "Santa couldn’t fit me down the chimney so he had me send you a text instead."}  
+    { "text": "Santa couldn’t fit me down the chimney so he had me send you a text instead."} , 
 ]
 
 export const DATE_SETUP = [
