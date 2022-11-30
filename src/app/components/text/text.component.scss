@@ -12,11 +12,11 @@ section {
    color: rgb(218, 218, 218);
  }
 
- .row {
+ .container {
   text-align: center
  }
 
- .row h1 {
+ .container h1 {
    margin-bottom: 1rem;
    font-weight: bold;
    font-size: 1.2rem;
@@ -100,11 +100,17 @@ section {
  }
 
 
- @media screen and (min-width: 576px) {
+ @media screen and (max-width: 576px) {
   section {
-   text-align: center;
+   padding: rem;
+ 
+  }
+  .divider {
+    border-bottom: 1px solid white;
+  
   }
 
+ 
 
   hr {
     margin-top: 2rem;;

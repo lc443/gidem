@@ -12,6 +12,12 @@ export const DATE_SETUP = [
     { "text": "You’re going on your ideal date this weekend. Spoiler alert: it’s with me."},
 ]
 
+export const DATE_QUESTIONS = [
+    { "text": "Close your eyes.... If you could wake up anyhwere in the world, where would it be?" },
+    { "text": "If you could be an animal, what animal would you be?" },
+    { "text": "Close your eyes.... If you could wake up anyhwere in the world, where would it be?" },
+    
+]
 export const PLAN_SETUP = [
     { "text": "Ok, we’re hanging out this weekend. My decision is final."},
     { "text": "I’ve made the executive decision that we’re seeing each other this weekend."},
