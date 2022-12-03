@@ -14,10 +14,11 @@ export const DATE_SETUP = [
 
 export const DATE_QUESTIONS = [
     { "text": "Close your eyes.... If you could wake up anyhwere in the world, where would it be?" },
-    { "text": "If you could be an animal, what animal would you be?" },
+    { "text": "What's a side of you that you are afraid to show?"},
     { "text": "Close your eyes.... If you could wake up anyhwere in the world, where would it be?" },
-    
-]
+    { "text": "If you could be an animal, what animal would you be?" },
+]; 
+
 export const PLAN_SETUP = [
     { "text": "Ok, we’re hanging out this weekend. My decision is final."},
     { "text": "I’ve made the executive decision that we’re seeing each other this weekend."},

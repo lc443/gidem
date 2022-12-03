@@ -11,17 +11,14 @@ export class TextComponent implements OnInit {
 
  firstTextList!: any[];
  firstText!: any;
-
  openerList!: any[];
  openerText!: any;
-
  firstClicked: boolean = true;
  openerClidked: boolean = true;
 
   constructor(private cdr: ChangeDetectorRef) { }
 
   ngOnInit( ): void {
-   
     this.firstTextList = FIRST_TEXT;
     this.firstText = this.firstTextList[0].text;
     this.cdr.detectChanges();
